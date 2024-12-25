@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    min-height: 100vh;
+    justify-content: space-between;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+}
+/* .sidebar .bi{
+    width: 20px;
+} */
+.bi-list{
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sidebar .new-chat{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    color: grey;
+    cursor: pointer;
+    font-size: 14px;
+}
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sidebar .recent-entry{
+    display: flex;
+    gap: 10px;
+    /* align-items: start; */
+    padding: 10px;
+    /* background-color: #e6eaf1; */
+    border-radius: 50px;
+    padding-right: 40px;
+}
+.sidebar .recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+/* for bottom css  */
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+.bottom .bottom-item {
+    padding-right: 10px;
+
+}
+/* making sidebar responsive */
+
+@media (max-width:600px) {
+    .sidebar{
+        display: none;
+    }
+    
+}
+/* side bar will not visible to mobile phones(small screens) */
